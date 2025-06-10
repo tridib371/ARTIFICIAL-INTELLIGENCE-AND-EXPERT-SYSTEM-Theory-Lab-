@@ -1,0 +1,41 @@
+1. Objective: The agent assists in managing a library's book lending system.
+
+
+
+2. List of Sensors:
+
+Book Availability: {Available, Not Available}
+User Request: {Book Request, No Request}
+Membership Status: {Member, Non-Member}
+
+
+
+3. Sensors Values:
+
+Book Availability: Available, Not Available
+User Request: Book Request, No Request
+Membership Status: Member, Non-Member
+
+
+
+4. List of Actions:
+
+Lend Book
+Book has already Lent
+No Action
+Deny Request
+
+
+
+5. Agent Function: Perception --> Action
+
+(Available, Book Request, Member) --> Lend Book
+(Available, Book Request, Non-Member) --> Deny Request
+(Available, No Request, Member) --> No Action
+(Available, No Request, Non-Member) --> No Action
+(Not Available, Book Request, Member) --> Book has already Lent
+(Not Available, Book Request, Non-Member) --> Book has already Lent
+(Not Available, No Request, Member) --> No Action
+(Not Available, No Request, Non-Member) --> No Action
+
+
